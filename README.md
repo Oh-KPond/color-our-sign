@@ -5,6 +5,7 @@ You can find the most recent version of the guide for React [here](https://githu
 
 ## To Run Color Our Sign on Localhost
 
-1. Clone Project
-2. run `bundle install`
-3. run `npm start`
+1. Clone project
+2. cd into 'color-our-sign'
+3. run `bundle install`
+4. run `npm start`
