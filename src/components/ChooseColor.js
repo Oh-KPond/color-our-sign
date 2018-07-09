@@ -50,7 +50,7 @@ class ChooseColor extends Component {
           </form>
         </section>
 
-        <footer className="start__logo">
+        <footer className="start__footer">
           <a href="http://www.thepondsedge.com/">
             <img src={logo} className="choose-logo" alt="The Pond's Edge logo" />
           </a>
