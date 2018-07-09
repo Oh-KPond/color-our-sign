@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import logo from '../assets/logo.svg';
+import logo from '../assets/bwPondsEdgeLogo.svg';
 import './ChooseColor.css';
 import { CirclePicker } from 'react-color';
 
