@@ -5,13 +5,28 @@ import Countdown from './components/Countdown';
 
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      color: {},
+      hex:'#fff'
+    };
+  }
+
+  selectedColor = (color) => {
+    this.setState({
+      color: color.choice,
+      hex: color.hex
+    });
+  }
+
   render() {
     return (
       <section>
         <header className="header">
           <h1 className="header__h1"><span className="header__text">Color Our Sign</span></h1>
         </header>
-        <ChooseColor />
+        <ChooseColor colorSelectionCallback={this.selectedColor}/>
       </section>
     );
   }
