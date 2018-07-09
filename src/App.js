@@ -9,12 +9,14 @@ class App extends Component {
     super();
     this.state = {
       color: {},
+      hex:'#fff'
     };
   }
 
   selectedColor = (color) => {
     this.setState({
-      color: color,
+      color: color.choice,
+      hex: color.hex
     });
   }
 

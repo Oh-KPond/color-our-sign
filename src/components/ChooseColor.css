@@ -1,7 +1,22 @@
-.landing__logo{
+.start__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.start__logo {
   text-align: center;
 }
 
 .choose-logo {
   height: 200px;
+}
+
+form {
+  align-self: center;
+}
+
+.sumbit-form__sumbit {
+  color: white;
 }
