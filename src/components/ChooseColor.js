@@ -44,7 +44,9 @@ class ChooseColor extends Component {
         </section>
 
         <footer className="landing__logo">
-          <img src={logo} className="choose-logo" alt="The Pond's Edge logo" />
+          <a href="http://www.thepondsedge.com/">
+            <img src={logo} className="choose-logo" alt="The Pond's Edge logo" />
+          </a>
         </footer>
       </section>
     )
