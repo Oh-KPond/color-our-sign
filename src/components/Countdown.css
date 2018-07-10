@@ -1,3 +1,7 @@
+.countdown{
+  display: flex;
+}
+
 .countdown__footer {
   text-align: center;
 }

@@ -1,14 +1,9 @@
-.start__body {
+.splash__body {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 5em;
+  margin-bottom: 1.5rem;
 }
-
-.start__footer {
-  text-align: center;
-}
-
 .choose-logo {
   height: 200px;
 }
@@ -18,5 +13,22 @@ form {
 }
 
 .sumbit-form__sumbit {
+  font-size: 2rem;
   color: white;
+  padding: 1.5rem 5rem;
+  border-radius: 20px;
+}
+
+.splash__color-picker {
+  align-self: center;
+  margin-left: 6rem;
+}
+
+.splash__color-picker span div {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.splash__footer {
+  text-align: center;
 }

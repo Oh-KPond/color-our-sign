@@ -8,7 +8,7 @@ import { CirclePicker } from 'react-color';
 class ChooseColor extends Component {
   state = {
     choice: { r: 51, g: 51, b: 51 },
-    hex: '#4A494A'
+    hex: '#4A494A',
   };
 
   handleChangeComplete = (color) => {
@@ -37,10 +37,13 @@ class ChooseColor extends Component {
     };
 
     return (
-      <section className="start">
-        <section className="start__body">
+      <section className="splash">
+        <section className="splash__body">
           <CirclePicker
-          className="start__color-picker"
+          width="415px"
+          circleSpacing="35px"
+          colors={["#f44336", "#e91e63", "#9c27b0", "#673ab7", "#3f51b5", "#2196f3", "#03a9f4", "#00bcd4", "#009688", "#4caf50", "#8bc34a", "#cddc39", "#ffeb3b", "#ffc107", "#ff9800", "#ff5722"]}
+          className="splash__color-picker"
           color={ this.state.choice }
           onChangeComplete={ this.handleChangeComplete }/>
 
@@ -51,7 +54,7 @@ class ChooseColor extends Component {
           </form>
         </section>
 
-        <footer className="start__footer">
+        <footer className="splash__footer">
           <a href="http://www.thepondsedge.com/" rel='noreferrer noopener' target="_blank">
             <img src={logo} className="choose-logo" alt="The Pond's Edge logo" />
           </a>
@@ -65,4 +68,5 @@ export default withRouter(ChooseColor);
 
 ChooseColor.propTypes = {
   colorSelectionCallback: PropTypes.func.isRequired,
+  history: PropTypes.object,
 };
