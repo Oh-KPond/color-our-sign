@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import logo from '../assets/logo.svg';
+import logo from '../assets/bwPondsEdgeLogo.svg';
 import './ChooseColor.css';
 import { CirclePicker } from 'react-color';
 
@@ -50,7 +50,7 @@ class ChooseColor extends Component {
           </form>
         </section>
 
-        <footer className="start__logo">
+        <footer className="start__footer">
           <a href="http://www.thepondsedge.com/">
             <img src={logo} className="choose-logo" alt="The Pond's Edge logo" />
           </a>

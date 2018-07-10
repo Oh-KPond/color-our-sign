@@ -26,7 +26,12 @@ class App extends Component {
         <header className="header">
           <h1 className="header__h1"><span className="header__text">Color Our Sign</span></h1>
         </header>
-        <ChooseColor colorSelectionCallback={this.selectedColor}/>
+        <ChooseColor
+          colorSelectionCallback={this.selectedColor}
+        />
+        <Countdown
+          selectedColor={this.state.hex}
+        />
       </section>
     );
   }
