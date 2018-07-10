@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import ChooseColor from './components/ChooseColor.js';
-import Countdown from './components/Countdown';
+import Countdown from './components/Countdown.js';
 
 
 class App extends Component {
@@ -21,18 +22,28 @@ class App extends Component {
   }
 
   render() {
+    const Splash = () => (
+      <ChooseColor
+        colorSelectionCallback={this.selectedColor}
+      />
+    )
+
+    const Response = () => (
+      <Countdown
+        selectedColor={this.state.hex}
+      />
+    )
+
     return (
-      <section>
-        <header className="header">
-          <h1 className="header__h1"><span className="header__text">Color Our Sign</span></h1>
-        </header>
-        <ChooseColor
-          colorSelectionCallback={this.selectedColor}
-        />
-        <Countdown
-          selectedColor={this.state.hex}
-        />
-      </section>
+      <Router>
+        <section>
+          <header className="header">
+            <h1 className="header__h1"><span className="header__text">Color Our Sign</span></h1>
+          </header>
+          <Route exact path="/" component={Splash} />
+          <Route path="/response" component={Response} />
+        </section>
+      </Router>
     );
   }
 }
