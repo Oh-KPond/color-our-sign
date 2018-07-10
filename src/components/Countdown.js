@@ -11,17 +11,23 @@ class ChooseColor extends Component {
       color: this.props.selectedColor,
     };
 
-    const Completionist = () => <span><h2>Check out the Sign!</h2> <h3><a href="/">And/Or Choose a new color!</a></h3></span>;
+    const Completionist = () => <span className="countdown__clock-response">
+                                  <h2 style={countdownColor}>Check out the Sign!</h2>
+                                  <h3>
+                                    <a href="/">Choose a New Color!</a>
+                                  </h3>
+                                  <h4 className="countdown__thank-you">Thank you for helping us color our sign!</h4>
+                                </span>;
 
-    const renderer = ({ hours, minutes, seconds, completed }) => {
+    const renderer = ({  minutes, seconds, completed }) => {
       if (completed) {
         // Render a complete state
         return <Completionist />;
       } else {
         // Render a countdown
-        return <span>
+        return <span style={countdownColor} className="countdown__clock">
                 <h2>Color change in</h2>
-                <h2 style={countdownColor}>{hours} hours: {minutes} min: {seconds} sec</h2>
+                <h2>{minutes} min: {seconds}&nbsp;sec</h2>
               </span>;
       }
     };
@@ -33,13 +39,12 @@ class ChooseColor extends Component {
             date={Date.now() + 10000}
             renderer={renderer}
           />
-          <h3>Thank you for helping us color our sign!!</h3>
         </section>
 
         <footer className="countdown__footer">
-          <a href="http://www.thepondsedge.com/" rel='noreferrer noopener' target="_blank">
-            <p>Find out more about us and our sign @</p>
+          <a className="countdown__find-out-link" href="http://www.thepondsedge.com/" rel='noreferrer noopener' target="_blank">
             <img src={logo} className="countdown-logo" alt="The Pond's Edge logo" />
+            <p className="countdown__find-out">Find out more about us and our sign!</p>
           </a>
         </footer>
       </section>

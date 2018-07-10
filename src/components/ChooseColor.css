@@ -1,3 +1,9 @@
+.splash {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .splash__body {
   display: flex;
   flex-direction: column;
@@ -5,7 +11,7 @@
   margin-bottom: 1.5rem;
 }
 .choose-logo {
-  height: 200px;
+  height: 400px;
 }
 
 form {
@@ -21,7 +27,7 @@ form {
 
 .splash__color-picker {
   align-self: center;
-  margin-left: 6rem;
+  margin-left: 7rem;
 }
 
 .splash__color-picker span div {
@@ -31,4 +37,22 @@ form {
 
 .splash__footer {
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .splash__body{
+    width: 100%
+  }
+
+  .choose-logo {
+    height: 200px;
+  }
+
+  .splash__color-picker {
+    width: 335px !important;
+  }
+
+  .sumbit-form__sumbit {
+    padding: 2rem;
+  }
 }

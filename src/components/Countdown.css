@@ -1,10 +1,65 @@
-.countdown{
+.countdown {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.countdown__body {
+  text-align: center;
+}
+
+.countdown__clock {
+  font-size: 2.5rem;
+}
+
+.countdown__clock-response h2 {
+  font-size: 3.5rem;
+}
+.countdown__clock-response h3 {
+  font-size: 1.75rem;
 }
 
 .countdown__footer {
   text-align: center;
 }
+
 .countdown-logo {
-  height: 200px;
+  height: 400px;
+  margin-left: 40px;
+}
+
+.countdown__find-out-link {
+  text-decoration: none;
+  color: #C01E56;
+}
+
+.countdown__find-out {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .countdown-logo {
+    height: 200px;
+  }
+
+  .countdown__body h2 {
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+
+  .countdown__find-out {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  .countdown-logo {
+    margin: 0;
+  }
+
+  .countdown__clock-response h2 {
+    margin: 0 1rem;
+  }
+
 }

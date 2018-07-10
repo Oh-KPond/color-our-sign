@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import ChooseColor from './components/ChooseColor.js';
 import Countdown from './components/Countdown.js';
@@ -38,7 +38,9 @@ class App extends Component {
       <Router>
         <section>
           <header className="header">
-            <h1 className="header__h1"><span className="header__text">Color Our Sign</span></h1>
+            <h1 className="header__h1">
+              <Link to="/"><span className="header__text">Color Our Sign</span></Link>
+            </h1>
           </header>
           <Route exact path="/" component={Splash} />
           <Route path="/response" component={Response} />
