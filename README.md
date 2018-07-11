@@ -9,3 +9,10 @@ You can find the most recent version of the guide for React [here](https://githu
 2. cd into 'color-our-sign'
 3. run `bundle install`
 4. run `npm start`
+
+## This App is deployed through Heroku
+
+- https://color-our-sign.herokuapp.com/
+- Custom domains have been added
+  - http://coloroursign.thepondsedge.com/
+  - http://sign.thepondsedge.com/
