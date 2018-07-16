@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       color: {},
       hex:'#fff',
-      countdown: '',
+      countdown: 0,
       error:''
     };
   }
