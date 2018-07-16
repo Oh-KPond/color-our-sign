@@ -4,12 +4,15 @@ import logo from '../assets/PondsEdgeLogo.svg';
 import './Countdown.css';
 import Countdown from 'react-countdown-now';
 
-class ChooseColor extends Component {
+class ColorCountdown extends Component {
+
 
   render() {
     const countdownColor = {
       color: this.props.selectedColor,
     };
+
+    const countdownTime = this.props.countdown
 
     const Completionist = () => <span className="countdown__clock-response">
                                   <h2 style={countdownColor}>Check out the Sign!</h2>
@@ -36,7 +39,7 @@ class ChooseColor extends Component {
       <section className="countdown">
         <section className="countdown__body">
           <Countdown
-            date={Date.now() + 10000}
+            date={Date.now() + countdownTime}
             renderer={renderer}
           />
         </section>
@@ -52,8 +55,9 @@ class ChooseColor extends Component {
   }
 }
 
-export default ChooseColor;
+export default ColorCountdown;
 
-Countdown.propTypes = {
+ColorCountdown.propTypes = {
   selectedColor: PropTypes.string,
+  countdown: PropTypes.number
 };

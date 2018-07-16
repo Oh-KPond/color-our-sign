@@ -47,6 +47,7 @@ class App extends Component {
     const Response = () => (
       <Countdown
         selectedColor={this.state.hex}
+        countdown={this.state.countdown}
       />
     )
 
