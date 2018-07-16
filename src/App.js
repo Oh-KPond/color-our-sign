@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import ChooseColor from './components/ChooseColor.js';
@@ -10,15 +11,30 @@ class App extends Component {
     super();
     this.state = {
       color: {},
-      hex:'#fff'
+      hex:'#fff',
+      countdown: '',
+      error:''
     };
   }
 
-  selectedColor = (color) => {
+  selectedColor = (set_color) => {
     this.setState({
-      color: color.choice,
-      hex: color.hex
-    });
+      color: set_color.choice,
+      hex: set_color.hex
+    })
+
+    let queue_color = JSON.stringify(set_color.choice)
+    console.log(queue_color)
+    axios.post('https://color-our-sign-api.herokuapp.com/queued_colors?color=' + queue_color)
+      .then((response) => {
+        console.log(response);
+        this.setState({ countdown: response.data.countdown });
+      })
+      .catch((error) => {
+        this.setState({
+          error: error.message
+        })
+      })
   }
 
   render() {
