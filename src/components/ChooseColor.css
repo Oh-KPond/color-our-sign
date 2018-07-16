@@ -28,6 +28,8 @@ form {
 .splash__color-picker {
   align-self: center;
   margin-left: 7rem;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .splash__color-picker span div {
