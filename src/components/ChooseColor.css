@@ -7,38 +7,24 @@
 .splash__body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 .choose-logo {
   height: 400px;
 }
 
-form {
-  align-self: center;
-}
-
 .sumbit-form__sumbit {
   font-size: 2rem;
   color: white;
+  text-shadow: 1px 1px 0 #444;
   padding: 1.5rem 5rem;
   border-radius: 20px;
 }
 
 .splash__color-picker {
-  align-self: center;
-  margin-left: 7rem;
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-.splash__color-picker span div {
-  width: 50px !important;
-  height: 50px !important;
-}
-
-.splash__footer {
-  text-align: center;
+  flex-grow: 2;
+  margin-left: 15%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -52,6 +38,8 @@ form {
 
   .splash__color-picker {
     width: 335px !important;
+    margin-left: 20%;
+    padding-bottom: 2em;
   }
 
   .sumbit-form__sumbit {

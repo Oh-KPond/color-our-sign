@@ -8,7 +8,7 @@ import { CirclePicker } from 'react-color';
 class ChooseColor extends Component {
   state = {
     choice: { r: 51, g: 51, b: 51 },
-    hex: '#4A494A',
+    hex: '#03a9f4',
   };
 
   handleChangeComplete = (color) => {
@@ -37,15 +37,17 @@ class ChooseColor extends Component {
     };
 
     const circleSpacing = 35
+    const circleSize = 50
 
     return (
       <section className="splash">
         <section className="splash__body">
           <CirclePicker
+          className="splash__color-picker"
           width="415px"
           circleSpacing={circleSpacing}
-          colors={["#f44336", "#e91e63", "#9c27b0", "#673ab7", "#3f51b5", "#2196f3", "#03a9f4", "#00bcd4", "#009688", "#4caf50", "#8bc34a", "#cddc39", "#ffeb3b", "#ffc107", "#ff9800", "#ff5722"]}
-          className="splash__color-picker"
+          circleSize={circleSize}
+          colors={["#ff0000", "#ffa500", "#ffff00", "#00ff00", "#0000ff", "#551a8b", "#03a9f4", "#e91e63", "#009688", "#800000", "#ff00ff","#006600"]}
           color={ this.state.choice }
           onChangeComplete={ this.handleChangeComplete }/>
 
@@ -56,11 +58,11 @@ class ChooseColor extends Component {
           </form>
         </section>
 
-        <footer className="splash__footer">
+        <section className="splash__logo-container">
           <a href="http://www.thepondsedge.com/" rel='noreferrer noopener' target="_blank">
             <img src={logo} className="choose-logo" alt="The Pond's Edge logo" />
           </a>
-        </footer>
+        </section>
       </section>
     )
   }

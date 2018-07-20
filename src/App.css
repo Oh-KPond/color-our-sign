@@ -3,11 +3,8 @@
 }
 
 body {
-  font-family: sans-serif;
-}
-
-h1, h2 {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Lora', serif;
+  background-color: #f2f2f2;
 }
 
 .header {

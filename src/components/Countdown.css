@@ -6,6 +6,7 @@
 
 .countdown__body {
   text-align: center;
+  text-shadow: 1px 1px 0 #444;
 }
 
 .countdown__clock {
@@ -17,6 +18,10 @@
 }
 .countdown__clock-response h3 {
   font-size: 1.75rem;
+}
+
+.countdown__thank-you {
+  text-shadow: none;
 }
 
 .countdown__footer {
