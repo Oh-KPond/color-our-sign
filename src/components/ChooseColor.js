@@ -7,7 +7,7 @@ import { CirclePicker } from 'react-color';
 
 class ChooseColor extends Component {
   state = {
-    choice: { r: 51, g: 51, b: 51 },
+    choice: 'rainbow', // creates rainbow as easter egg
     hex: '#03a9f4',
   };
 
