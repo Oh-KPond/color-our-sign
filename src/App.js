@@ -23,7 +23,7 @@ class App extends Component {
       hex: set_color.hex
     })
 
-    let queue_color = JSON.stringify(set_color.choice)
+    let queue_color = JSON.stringify(set_color.hex)
     console.log(queue_color)
     axios.post('https://color-our-sign-api.herokuapp.com/queued_colors?color=' + queue_color)
       .then((response) => {
