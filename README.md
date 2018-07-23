@@ -17,7 +17,7 @@ You can find the most recent version of the guide for React [here](https://githu
   - http://coloroursign.thepondsedge.com/
   - http://sign.thepondsedge.com/
 
-## Installed Components Included
+## Installed Components Include
 
 - [React Color](https://casesandberg.github.io/react-color/)
 - [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
