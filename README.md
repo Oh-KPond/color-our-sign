@@ -20,3 +20,5 @@ You can find the most recent version of the guide for React [here](https://githu
 ## Installed Components Included
 
 - [React Color](https://casesandberg.github.io/react-color/)
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+-[React <Countdown />](https://www.npmjs.com/package/react-countdown-now)
