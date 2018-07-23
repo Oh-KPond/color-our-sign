@@ -22,3 +22,7 @@ You can find the most recent version of the guide for React [here](https://githu
 - [React Color](https://casesandberg.github.io/react-color/)
 - [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 -[React <Countdown />](https://www.npmjs.com/package/react-countdown-now)
+
+## Links to Connecting Code (API & Hardware Repos)
+- [Color Our Sign API](https://github.com/Oh-KPond/color-our-sign-api)
+- [Color Our Sign Hardware](https://github.com/Oh-KPond/color-our-sign-feather)
