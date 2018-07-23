@@ -13,6 +13,7 @@ class App extends Component {
       color: {},
       hex:'#fff',
       countdown: 0,
+      postion: 0,
       error:''
     };
   }
@@ -25,10 +26,13 @@ class App extends Component {
 
     let queue_color = JSON.stringify(set_color.choice)
     console.log(queue_color)
-    axios.post('https://color-our-sign-api.herokuapp.com/queued_colors?color=' + queue_color)
+    axios.post('http://localhost:3000/queued_colors?color=' + queue_color)
       .then((response) => {
         console.log(response);
-        this.setState({ countdown: response.data.countdown });
+        this.setState({
+          countdown: response.data.countdown,
+          postion: response.data.postion
+         });
       })
       .catch((error) => {
         this.setState({
@@ -48,6 +52,7 @@ class App extends Component {
       <Countdown
         selectedColor={this.state.hex}
         countdown={this.state.countdown}
+        postionNum={this.state.postion}
       />
     )
 

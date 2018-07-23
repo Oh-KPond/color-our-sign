@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import PositionInQueue from './components/PositionInQueue.js';
 import logo from '../assets/PondsEdgeLogo.svg';
 import './Countdown.css';
 import Countdown from 'react-countdown-now';
@@ -22,7 +23,7 @@ class ColorCountdown extends Component {
                                   <h4 className="countdown__thank-you">Thank you for helping us color our sign!</h4>
                                 </span>;
 
-    const renderer = ({  minutes, seconds, completed }) => {
+    const renderer = ({ minutes, seconds, completed }) => {
       if (completed) {
         // Render a complete state
         return <Completionist />;
@@ -42,6 +43,9 @@ class ColorCountdown extends Component {
             date={Date.now() + countdownTime}
             renderer={renderer}
           />
+          <PositionInQueue
+            postionNum = {this.props.postionNum}
+          />
         </section>
 
         <footer className="countdown__footer">
@@ -59,5 +63,6 @@ export default ColorCountdown;
 
 ColorCountdown.propTypes = {
   selectedColor: PropTypes.string,
-  countdown: PropTypes.number
+  countdown: PropTypes.number,
+  postionNum: PropTypes.number,
 };
