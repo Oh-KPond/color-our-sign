@@ -20,7 +20,8 @@ body {
   padding: 1rem;
   display: inline-block;
   font-size: 6rem;
-  color: #58595B;
+  color: #fff;
+  text-shadow: 3px 3px 4px #444;
 }
 
 @media only screen and (max-width: 768px) {

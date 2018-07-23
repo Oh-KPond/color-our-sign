@@ -16,3 +16,7 @@ You can find the most recent version of the guide for React [here](https://githu
 - Custom domains have been added
   - http://coloroursign.thepondsedge.com/
   - http://sign.thepondsedge.com/
+
+## Installed Components Included
+
+- [React Color](https://casesandberg.github.io/react-color/)
