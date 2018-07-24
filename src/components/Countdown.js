@@ -17,9 +17,8 @@ class ColorCountdown extends Component {
     const Completionist = () => <span className="countdown__clock-response">
                                   <h2 style={countdownColor}>Check out the Sign!</h2>
                                   <h3>
-                                    <a href="/">Choose a New Color!</a>
+                                    <a className="countdown__choose-new" href="/">Choose a New Color!</a>
                                   </h3>
-                                  <h4 className="countdown__thank-you">Thank you for helping us color our sign!</h4>
                                 </span>;
 
     const renderer = ({  minutes, seconds, completed }) => {

@@ -6,7 +6,7 @@
 
 .countdown__body {
   text-align: center;
-  text-shadow: 1px 1px 0 #444;
+  text-shadow: 1px 0px 1px #444;
 }
 
 .countdown__clock {
@@ -15,14 +15,48 @@
 
 .countdown__clock-response h2 {
   font-size: 3.5rem;
+  margin-bottom: 1em;
 }
 .countdown__clock-response h3 {
   font-size: 1.75rem;
 }
 
-.countdown__thank-you {
-  text-shadow: none;
-  font-family: serif;
+.countdown__choose-new {
+  text-decoration: none;
+  border: 3px solid;
+  padding: .5em;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.countdown__choose-new:hover {
+  color: #fff;
+  background-color: purple;
+}
+
+/* .countdown__choose-new:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.countdown__choose-new:hover:before, .countdown__choose-new:focus:before, .countdown__choose-new:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+} */
+
+.countdown__choose-new:focus {
+  outline: none;
 }
 
 .countdown__footer {

@@ -24,6 +24,10 @@ body {
   text-shadow: 3px 3px 4px #444;
 }
 
+.header__text:hover {
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 768px) {
   .header {
     padding: 1.25rem 0;

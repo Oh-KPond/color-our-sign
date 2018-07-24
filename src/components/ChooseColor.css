@@ -17,9 +17,17 @@
 .sumbit-form__sumbit {
   font-size: 2rem;
   color: white;
-  text-shadow: 1px 1px 0 #444;
+  text-shadow: 2px 1px 4px #444;
   padding: 1.5rem 5rem;
   border-radius: 20px;
+}
+
+input[type="submit" i]:hover {
+  transform: scale(1.1) rotate(4deg);
+}
+
+input[type="submit" i]:focus {
+  outline: none;
 }
 
 .splash__color-picker {

@@ -51,12 +51,16 @@ class App extends Component {
       />
     )
 
+    const headerColor = {
+      color: this.state.hex,
+    };
+
     return (
       <Router>
         <section>
           <header className="header">
             <h1 className="header__h1">
-              <Link to="/"><span className="header__text">Color Our Sign</span></Link>
+              <Link to="/"><span style={headerColor} className="header__text">Color Our Sign</span></Link>
             </h1>
           </header>
           <Route exact path="/" component={Splash} />
