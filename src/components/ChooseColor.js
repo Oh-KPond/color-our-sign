@@ -47,7 +47,13 @@ class ChooseColor extends Component {
           width="415px"
           circleSpacing={circleSpacing}
           circleSize={circleSize}
-          colors={["#ff0000", "#ffa500", "#ffeb3b", "#00ff00", "#0000ff", "#551a8b", "#03a9f4", "#e91e63", "#009688", "#c268ba", "#ff00ff","#006600"]}
+          colors=
+          {[
+            "#ff0000", "#ffa500", "#ffeb3b",
+            "#00ff00", "#006600", "#009688",
+            "#03a9f4", "#0000ff", "#c268ba",
+            "#551a8b", "#ff00ff",  "#e91e63"
+          ]}
           color={ this.state.choice }
           onChangeComplete={ this.handleChangeComplete }/>
 
